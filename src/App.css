@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 10px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.form-control {
+  @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+.form-control:focus {
+  @apply outline-none ring-2 ring-blue-200;
+}
+
+.btn {
+  @apply px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700;
+}
+
+.btn-success {
+  @apply bg-green-600 hover:bg-green-700;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 hover:bg-gray-700;
+}
+
+.btn-warning {
+  @apply bg-yellow-600 hover:bg-yellow-700;
+}
+
+.btn-info {
+  @apply bg-indigo-600 hover:bg-indigo-700;
+}
+
+.btn-light {
+  @apply bg-gray-600 hover:bg-gray-700;
+}
+
+.btn-dark {
+  @apply bg-gray-600 hover:bg-gray-700;
+}
+
+.btn-link {
+  @apply text-blue-600 hover:text-blue-700;
+}
+
+.btn-outline {
+  @apply text-gray-600 hover:text-gray-700;
+}
+
+.btn-rounded {
+  @apply rounded-full;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+.btn-sm {
+  @apply px-4 py-2 text-sm;
+}
+
+.btn-lg {
+  @apply px-8 py-3 text-lg;
+}
+
+.btn-xl {
+  @apply px-10 py-4 text-xl;
+}
+
+.btn-xxl {
+  @apply px-12 py-5 text-2xl;
+}
